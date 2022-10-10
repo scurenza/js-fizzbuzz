@@ -12,19 +12,34 @@ let fizzBuzz = 'FizzBuzz';
 for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log(fizzBuzz);
+        const col = document.createElement("div");
+        col.classList.add("col");
+        col.classList.add("red");
+        col.innerHTML = fizzBuzz;
+        document.querySelector(".row").append(col);
     }
 
     else if (i % 3 === 0) {
-        console.log(fizz);
+        const col = document.createElement("div");
+        col.classList.add("col");
+        col.classList.add("violet");
+        col.innerHTML = fizz;
+        document.querySelector(".row").append(col);
     }
 
     else if (i % 5 === 0) {
-        console.log(buzz);
+        const col = document.createElement("div");
+        col.classList.add("col");
+        col.classList.add("yellow");
+        col.innerHTML = buzz;
+        document.querySelector(".row").append(col);
     }
 
     else {
-        console.log(i);
+        const col = document.createElement("div");
+        col.classList.add("col");
+        col.innerHTML = i;
+        document.querySelector(".row").append(col);;
     }
     
 }

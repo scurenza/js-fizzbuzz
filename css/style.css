@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.col{
+    width: calc(100% / 5 - 4rem);
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    
+}
+
+.yellow{
+    background-color: yellowgreen;
+}
+
+.violet{
+    background-color: blueviolet;
+}
+
+.red{
+    background-color: red;
+}
+
+h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4rem;
+}
