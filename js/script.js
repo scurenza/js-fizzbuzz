@@ -5,15 +5,26 @@
 // Dati
 let num = 0;
 let fizz = 'Fizz';
+let buzz = 'Buzz';
+let fizzBuzz = 'FizzBuzz';
 
 // Ciclo iniziale per stampare i numeri in console
 for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0) {
-        i = fizz;
-        
+        console.log(fizz);
     }
-    
-    console.log(i);
+
+    else if (i % 5 === 0) {
+        console.log(buzz);
+    }
+
+    // if (i % 3 === 0 && i % 5 === 0) {
+    //     console.log(fizzBuzz);
+    // }
+
+    else {
+        console.log(i);
+    }
     
 }
